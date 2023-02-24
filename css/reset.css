@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+@font-face{ /* 배너로고  서체 */
+    font-family:lola;
+    src:url('../fonts/Lora.eot');
+    src:url('../fonts/Lora.woff') format('woff');
+}
+
+@font-face { /* 로고 서체 */
+    font-family:skhand;
+    src: url('../fonts/Shrikhand.eot');
+    src:url('../fonts/Shrikhand.woff') format('woff');
+}
+
+@font-face{  /* 메인- 빅타이포 서체 */
+    font-family:roboto;
+    src:url('../fonts/RobotoCondensed-Bold.eot');
+    src:url('../fonts/RobotoCondensed-Bold.woff')format('woff');
+}
+
+@font-face { /* 본문 서체 */
+    font-family:h-gothic;
+    src: url('../fonts/HallymGothic-Regular.eot');
+    src: url('../fonts/HallymGothic-Regular.woff')format('woff');
+}
+
+@font-face { /* 부제 서체 */
+    font-family:h-mjo;
+    src: url('../fonts/HallymMjo-Regular.eot');
+    src: url('../fonts/HallymMjo-Regular.woff')format('woff');
+}
+/* ----------------- 폰트 설정 ---------------------- */
+
+* {margin:0; padding:0; box-sizing:border-box;}
+
+body{ font-family:h-gothic; font-weight:400;}
+
+h1{ font-family:skhand;}
+h2,h3{font-family:lola;}
+#t-red{color:#EE2B47;} /* 강조 색상 */
+ul li{float:left; list-style:none;}  /* 리스트 형식 해제 */
+a {display:block; color:#000;text-decoration:none; border:0; outline:0;}
+.clear {clear:both;}

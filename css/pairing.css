@@ -1,0 +1,506 @@
+@charset "utf-8";
+.pa-bn {background:url('../imgs/pairing/fhd/pa-bn.jpg')center center no-repeat;
+    background-size:cover;
+}
+
+/* FHD ~ 1400px ↑ */
+@media screen and (min-width:1400px) {
+
+    /* ----페어링의 정의 ----*/
+    .pa-justice{
+        width:100%; height:500px;
+        background:url('../imgs/pairing/fhd/sub-bg-bar.jpg')center center repeat-x;
+    }
+    .pa-container{
+        display:flex; justify-content:space-between;
+        position:absolute; margin:0 13%;
+        width:1400px; height: 500px;
+        padding:0 50px;
+        
+    }
+    .pa-container >.pa-justice-1{
+        width:750px; height:500px;
+        background:url('../imgs/pairing/fhd/pa-bg1.jpg')center center no-repeat;
+    }
+    .pa-justice-2 {width:470px; margin-top:150px;}
+    .pa-justice-2 > h3 {font-size:50px; font-weight:bold;}
+    .pa-justice-2 > .subtitle {
+        font-size:18px; font-weight: bold;
+        padding-left:5px; margin-top:10px;
+    }
+    .con {margin-top:40px; padding-left:5px;}
+
+    /*---------- 페어링 가이드 ---------- */
+
+    .pa-section{
+        margin:0 13%;
+        margin-top:120px; padding:0 50px;
+        width:1400px; height:720px;
+        position: relative;
+        }
+    .pa-gtitle {text-align:center;}
+    .pa-gtitle > h3 {font-size:50px; font-weight:bold; margin-bottom:10px;}
+
+/*=========  탭 배경(회색) ==========*/
+.pa-gray{
+    margin-top:60px;
+    width:1300px; height:580px;
+    background:#f3f3f5; border-radius:25px;
+    padding:10px;
+}
+/*=========  탭 메뉴==========*/
+
+.pa-tabs{width:1280px; height:560px;
+        border-radius:25px;
+        margin-bottom: 200px;}
+
+/*======= 탭 버튼===========*/
+.pa-tabs input{position:absolute; top:85px; width:200px; height:60px;
+            cursor:pointer; display:none;}
+.pa-tabs > #tab-2 {left:260px;}
+.pa-tabs > #tab-3 {left:460px;}
+
+.pa-tabs label {display:block; float:left; position:relative;
+            width:200px; height:60px;
+            color:#1d0033; font-weight:700; text-align:center; line-height:60px;
+            text-transform:uppercase; font-size:16px;
+            border-radius:10px 10px 0 0;
+            background:#d9c9ea;
+            margin-right:5px;
+            margin-top:-60px;
+}
+
+.pa-tabs .tab-label-2 {margin-left:205px; }
+.tab-label-3 {margin-left:410px;}
+
+/* 마우스 오버한 라디오 버튼에 다음에 있는 라벨의 배경색을 변경 */
+.pa-tabs input:hover+label{background:#1d0033; color:#EE2B47;}
+
+/* 체크된 라디오버튼 다음에 있는 라벨의 배경색 변경  */
+.pa-tabs input:checked+label{background:#FFF;;}
+
+
+/*======= 탭 내용===========*/
+
+.pa-content{position:relative; width:100%; height:500px;
+            background:#FFF; border-radius:0 20px 20px 20px;
+            margin-top: 60px; }
+
+.pa-content div {position:absolute; transition:all 0.4s ease 0.2s;}
+.pa-con1 {
+        top:60px; margin-left:80px;
+        background:url('../imgs/pairing/fhd/pa-con1.jpg') left center no-repeat;
+        width:670px; height:380px;}
+
+.pa-con2 {
+    top:60px; margin-left:80px;
+    background:url('../imgs/pairing/fhd/pa-con2.jpg') left center no-repeat;
+    width:670px; height:380px;}
+
+.pa-con3 {
+    top:60px; margin-left:80px;
+    background:url('../imgs/pairing/fhd/pa-con3.jpg') left center no-repeat;
+    width:670px; height:380px;}
+
+.pa-content .pa-p{ width:430px; height:130px; top:60px; left:790px;}
+.pa-p h4 {font-family:h-mjo; font-size:36px; font-weight:bold;}
+.pa-p > p {margin-top:30px; height:70px; margin-bottom: 25px;}
+
+.pa-wine-list {
+    height:210px; padding:20px;
+    background:#fbfbfb; border-left:5px solid rgba(238,43,71,0.4);}  
+
+.pa-wine-list > li{float:none; display:block; margin:20px 5px 0;}
+.pa-wine-list > li:first-child {margin-top:0;}
+.pa-wine-list > li:last-child {margin-bottom:0;}
+.pa-wine-list > li > i{font-size:25px; margin-right:45px;}
+
+.pa-content-1, .pa-content-2, .pa-content-3 {opacity:0;}
+
+.pa-tabs input.tab-radio-1:checked ~.pa-content .pa-content-1,
+.pa-tabs input.tab-radio-2:checked ~.pa-content .pa-content-2,
+.pa-tabs input.tab-radio-3:checked ~.pa-content .pa-content-3
+{ opacity:1;}
+} 
+
+
+/* HD ~ 1000px ↑ 1399px↓ */
+@media screen and (min-width:1000px) and (max-width:1399px) {
+
+    /* ----페어링의 정의 ----*/
+    .pa-justice{
+        width:100%; height:389px;
+        background:url('../imgs/pairing/hd/sub-bg-bar.jpg')center center repeat-x;
+    }
+    .pa-container{
+        display:flex; justify-content:space-between;
+        margin:0 auto;
+        width:1000px; height:389px;
+        padding:0 30px;
+    }
+    .pa-container >.pa-justice-1{
+        width:517px; height:387px;
+        background:url('../imgs/pairing/hd/bg1.jpg') center no-repeat;
+    }
+    .pa-justice-2 {width:369px; margin-top:109px;}
+    .pa-justice-2 > h3 {font-size:40px; font-weight:bold;}
+    .pa-justice-2 > .subtitle {
+        font-size:16px; font-weight: bold;
+        padding-left:5px; margin-top:10px;
+    }
+    .con {margin-top:25px; padding-left:5px;}
+
+    /*---------- 페어링 가이드 ---------- */
+
+    .pa-section{
+        margin:0 auto;
+        margin-top:120px; padding:0 30px;
+        width:1000px; height:720px;
+        position: relative;
+        }
+    .pa-gtitle {text-align:center;}
+    .pa-gtitle > h3 {font-size:40px; font-weight:bold; margin-bottom:10px;}
+
+/*=========  탭 배경(회색) ==========*/
+.pa-gray{
+    margin-top:60px;
+    width:940px; height:580px;
+    background:#f3f3f5; border-radius:20px;
+    padding:10px;
+}
+/*=========  탭 메뉴==========*/
+
+.pa-tabs{width:920px; height:560px;
+        border-radius:25px;
+}
+
+/*======= 탭 버튼===========*/
+.pa-tabs input{position:absolute; top:85px; width:200px; height:60px;
+            cursor:pointer; display:none;}
+.pa-tabs > #tab-2 {left:260px;}
+.pa-tabs > #tab-3 {left:460px;}
+
+.pa-tabs label {display:block; float:left; position:relative;
+            width:200px; height:60px;
+            color:#1d0033; font-weight:700; text-align:center; line-height:60px;
+            text-transform:uppercase; font-size:16px;
+            border-radius:10px 10px 0 0;
+            background:#d9c9ea;
+            margin-right:5px;
+            margin-top:-60px;
+}
+
+.pa-tabs .tab-label-2 {margin-left:205px;}
+.tab-label-3 {margin-left:410px;}
+
+/* 마우스 오버한 라디오 버튼에 다음에 있는 라벨의 배경색을 변경 */
+.pa-tabs input:hover+label{background:#1d0033; color:#EE2B47;}
+
+/* 체크된 라디오버튼 다음에 있는 라벨의 배경색 변경  */
+.pa-tabs input:checked+label{background:#FFF;;}
+
+
+/*======= 탭 내용===========*/
+
+.pa-content{position:relative; width:100%; height:500px;
+            background:#FFF; border-radius:0 20px 20px 20px;
+            margin-top: 60px;
+        }
+
+.pa-content div {position:absolute; transition:all 0.4s ease 0.2s;}
+.pa-con1 {
+        top:60px; margin-left:30px;
+        background:url('../imgs/pairing/hd/con1.jpg') left center no-repeat;
+        width:500px; height:380px;}
+
+.pa-con2 {
+    top:60px; margin-left:30px;
+    background:url('../imgs/pairing/hd/con2.jpg') left center no-repeat;
+    width:500px; height:380px;}
+
+.pa-con3 {
+    top:60px; margin-left:30px;
+    background:url('../imgs/pairing/hd/con3.jpg') left center no-repeat;
+    width:500px; height:380px;}
+
+.pa-content .pa-p{ 
+    width:340px; height:130px; top:60px; left:570px; padding-right:20px;
+}
+.pa-p h4 {font-family:h-mjo; font-size:36px; font-weight:bold;}
+.pa-p > p {
+    font-size:14px;
+    margin-top:30px; height:70px; margin-bottom: 25px;}
+
+.pa-wine-list {
+    height:210px; padding:20px; margin-right:20px;
+    background:#fbfbfb; border-left:5px solid rgba(238,43,71,0.4);}  
+
+.pa-wine-list > li{float:none; display:block; margin:20px 5px 0;}
+.pa-wine-list > li:first-child {margin-top:0;}
+.pa-wine-list > li:last-child {margin-bottom:0;}
+.pa-wine-list > li > i{font-size:25px; margin-right:40px;}
+
+.pa-content-1, .pa-content-2, .pa-content-3 {opacity:0;}
+
+.pa-tabs input.tab-radio-1:checked ~.pa-content .pa-content-1,
+.pa-tabs input.tab-radio-2:checked ~.pa-content .pa-content-2,
+.pa-tabs input.tab-radio-3:checked ~.pa-content .pa-content-3
+{ opacity:1;}
+}
+
+
+
+/* table ~ 600px ↑ 999px↓ */
+@media screen and (min-width:600px) and (max-width:999px) {
+    
+    .pa-container{
+        position:relative; margin:0 auto;
+        width:600px; height:520px;
+        background:#feeaef;
+        padding:0 30px;
+    }
+    .pa-container >.pa-justice-1{
+        position:absolute;
+        top:190px;
+        width:540px; height:290px;
+        background:url('../imgs/pairing/table/bg1.jpg') center no-repeat;
+    }
+    .pa-justice-2 { position:absolute; width:540px;}
+    .pa-justice-2 > h3 {font-size:40px; font-weight:bold; margin-top:30px;}
+    .pa-justice-2 > .subtitle {
+        font-size:16px; font-weight: bold;
+        padding-left:5px;
+    }
+    .con {font-size:14px; margin-top:10px; padding-left:5px;}
+
+    /*---------- 페어링 가이드 ---------- */
+
+    .pa-section{
+        margin:0 auto;
+        margin-top:70px;
+        width:600px; height:1000px;
+        position: relative;
+        }
+    .pa-gtitle {text-align:center;}
+    .pa-gtitle > h3 {font-size:40px; font-weight:bold; margin-bottom:10px;}
+
+/*=========  탭 배경(회색) ==========*/
+.pa-gray{
+    margin-top:35px;
+    width:600px; height:920px;
+    background:#f3f3f5; border-radius:20px;
+    padding:10px;
+}
+/*=========  탭 메뉴==========*/
+
+.pa-tabs{width:580px; height:900px;
+        border-radius:25px;
+        margin-bottom: 200px;}
+
+/*======= 탭 버튼===========*/
+.pa-tabs input{position:absolute; top:85px; width:170px; height:40px;
+            cursor:pointer; display:none;}
+.pa-tabs > #tab-2 {left:180px;}
+.pa-tabs > #tab-3 {left:350px;}
+
+.pa-tabs label {display:block; float:left; position:relative;
+            width:170px; height:60px;
+            color:#1d0033; font-weight:700; text-align:center; line-height:60px;
+            text-transform:uppercase; font-size:16px;
+            border-radius:10px 10px 0 0;
+            background:#d9c9ea;
+            margin-right:5px;
+            margin-top:-60px;
+}
+
+.pa-tabs .tab-label-2 {margin-left:175px;}
+.tab-label-3 {margin-left:350px;}
+
+/* 마우스 오버한 라디오 버튼에 다음에 있는 라벨의 배경색을 변경 */
+.pa-tabs input:hover+label{background:#1d0033; color:#EE2B47;}
+
+/* 체크된 라디오버튼 다음에 있는 라벨의 배경색 변경  */
+.pa-tabs input:checked+label{background:#FFF;;}
+
+
+/*======= 탭 내용===========*/
+
+.pa-content{position:relative; width:100%; height: 840px;
+            background:#FFF; border-radius:0 20px 20px 20px;
+            margin-top: 60px;
+        }
+
+.pa-content div {position:absolute; transition:all 0.4s ease 0.2s;}
+.pa-con1 {
+        top:200px; margin:0 20px;
+        background:url('../imgs/pairing/table/con1.jpg') center center no-repeat;
+        width:540px; height:420px;}
+
+.pa-con2 {
+    top:200px; margin:0 20px;
+    background:url('../imgs/pairing/table/con2.jpg') center center no-repeat;
+    width:540px; height:420px;}
+
+.pa-con3 {
+    top:200px; margin:0 20px;
+    background:url('../imgs/pairing/table/con3.jpg') center center no-repeat;
+    width:540px; height:420px;}
+
+.pa-content .pa-p{ 
+    width:540px; height:720px; top:60px; margin-left:20px;
+}
+.pa-p h4 {
+    font-family:h-mjo; font-size:36px; font-weight:bold;
+    text-align:center;
+}
+.pa-p > p {
+    font-size:14px;
+    margin-top:25px; height:40px; margin-bottom:25px;}
+
+.pa-wine-list {
+    position:absolute;
+    width:540px; top:590px;
+    height:140px; padding:35px 40px;
+    background:#fbfbfb;
+}  
+
+.pa-wine-list > li{float:left; margin:5px 12px;}
+.pa-wine-list > li:first-child {margin-top:0;}
+.pa-wine-list > li:nth-child(2) {margin-top:0;}
+.pa-wine-list > li:last-child {margin-bottom:0;}
+.pa-wine-list > li > .fa-solid{font-size:25px; margin-right:20px;}
+
+.pa-content-1, .pa-content-2, .pa-content-3 {opacity:0;}
+
+.pa-tabs input.tab-radio-1:checked ~.pa-content .pa-content-1,
+.pa-tabs input.tab-radio-2:checked ~.pa-content .pa-content-2,
+.pa-tabs input.tab-radio-3:checked ~.pa-content .pa-content-3
+{ opacity:1;}
+
+
+}
+
+/* mablie ~ 599px ↓ */
+@media screen and (max-width:599px) {
+
+    .pa-container{
+        position:relative; margin:0 auto;
+        width:375px; height:500px;
+        background:#feeaef;
+        padding:0 20px;
+    }
+    .pa-container >.pa-justice-1{
+        position:absolute;
+        top:230px;
+        width:335px; height:235px;
+        background:url('../imgs/pairing/moble/bg1.jpg') center no-repeat;
+    }
+    .pa-justice-2 { position:absolute; width:335px;}
+    .pa-justice-2 > h3 {
+        font-size:30px; font-weight:bold; margin-top:30px;
+        text-align:center;
+    }
+    .pa-justice-2 > .subtitle {
+        font-size:18px; font-weight: bold; text-align:center;
+    }
+    .con {font-size:14px; margin-top:20px;}
+
+    /*---------- 페어링 가이드 ---------- */
+
+.pa-section{
+    margin:0 auto;
+    margin-top:70px;
+    width:375px; height:810px;
+    position: relative;
+}
+.pa-gtitle {text-align:center; margin-bottom:40px;}
+.pa-gtitle > h3 {font-size:30px; font-weight:bold; margin-bottom:10px;}
+.pa-gtitle > p {font-size:15px;}
+
+/*=========  탭 배경(회색) ==========*/
+.pa-gray{
+    margin-top:100px;
+    width:375px; height:720px;
+    margin-bottom: 200px;
+}
+/*=========  탭 메뉴==========*/
+
+.pa-tabs{
+    width:375px; height:720px;}
+
+/*======= 탭 버튼===========*/
+.pa-tabs input{position:absolute; top:80px; width:120px; height:40px;
+            cursor:pointer; display:none;}
+.pa-tabs > #tab-2 {left:120px;}
+.pa-tabs > #tab-3 {left:230px;}
+
+.pa-tabs label {
+    display:block; float:left; position:relative;
+    width:120px; height:60px;
+    color:#1d0033; font-weight:700; text-align:center; line-height:60px;
+    text-transform:uppercase; font-size:16px; text-decoration-line:underline;
+    margin-right:5px;
+    margin-top:-60px;
+
+}
+
+.pa-tabs .tab-label-2 {margin-left:125px;}
+.pa-tabs .tab-label-3 {margin-left:250px;}
+
+/* 마우스 오버한 라디오 버튼에 다음에 있는 라벨의 배경색을 변경 */
+.pa-tabs input:hover+label{color:#EE2B47;}
+
+/* 체크된 라디오버튼 다음에 있는 라벨의 배경색 변경  */
+.pa-tabs input:checked+label{background:#FFF;;}
+
+
+/*======= 탭 내용===========*/
+
+.pa-content{
+    margin-left:20px;        
+    position:relative; width:335px; height: 720px;
+    background:#f8f8f8;
+    margin-top:60px;
+        }
+
+.pa-content div {position:absolute; transition:all 0.4s ease 0.2s;}
+.pa-con1, .pa-con2, .pa-con3 {top:230px; width:335px; height:190px;}
+.pa-con1 { background:url('../imgs/pairing/moble/con1.jpg') center center no-repeat;}
+
+.pa-con2 {background:url('../imgs/pairing/moble/con2.jpg') center center no-repeat;}
+
+.pa-con3 { background:url('../imgs/pairing/moble/con3.jpg') center center no-repeat;}
+
+.pa-content .pa-p{ 
+    width:270px; height:720px; margin-top:5px; margin-left:10px;}
+.pa-p h4 {
+    margin-top:40px; padding-left:50px;
+    font-family:h-mjo; font-size:24px; font-weight:bold;
+    text-align:center;
+}
+.pa-p > p {
+    height:96px; margin-bottom:25px; margin-top:10px;
+    padding-left:50px;
+    font-size:14px; text-align:center;
+}
+
+.pa-wine-list {
+    position:absolute;
+    width:335px; height:140px; top:450px;
+     padding:35px 35px;
+}  
+
+.pa-wine-list > li{float:left; margin:10px 10px; font-size:16px;}
+.pa-wine-list > li:first-child {margin-top:0; margin-bottom:15px;}
+.pa-wine-list > li:nth-child(2) {margin-top:0;}
+.pa-wine-list > li:last-child {margin-bottom:0;}
+.pa-wine-list > li > .fa-solid{font-size:25px; margin-right:20px;}
+
+.pa-content-1, .pa-content-2, .pa-content-3 {opacity:0;}
+
+.pa-tabs input.tab-radio-1:checked ~.pa-content .pa-content-1,
+.pa-tabs input.tab-radio-2:checked ~.pa-content .pa-content-2,
+.pa-tabs input.tab-radio-3:checked ~.pa-content .pa-content-3
+{ opacity:1;}
+
+}
